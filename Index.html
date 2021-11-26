@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+<body onload="Load()" style="margin:0;">
+
+    <div class="loader" id="loader"></div>
+    <div style="display:none;" id="main" class="animate-bottom">
+        <header class="header" id="header">
+            <nav class="nav_container">
+                <p class="nav_logo">Petya</p>
+                <div class="nav_menu" id="nav_menu">
+                    <ul class="nav_list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <div class="dropdown">
+                         <button class="dropbtn">Skills
+                           <i class="fa fa-caret-down"></i>
+                         </button>
+                         <div class="dropdown-content">
+                             <li><a href="#oop">OOP with C#</a></li>
+                             <li><a href="#java">Java</a></li>
+                             <li><a href="#database">Database</a></li>
+                             <li><a href="#sa">Software Architectures</a></li>
+                             <li><a href="#html_css">HTML&CSS</a></li>
+                         </div>
+                       </div>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a class="cv" href="https://drive.google.com/file/d/1rbIjblxBZjAV-Z_aNthxo6IAPda-Q856/view?usp=sharing">CV - BG</a></li>
+                        <li><a class="cv" href="https://drive.google.com/file/d/1D70qh8B9LT77qRAIRWUUmcby2OO1E5CD/view?usp=sharing">CV-UK</a></li>
+     
+                    </ul>
+                </div>
+            </nav>
+            <div class="progress-container">
+             <div class="progress-bar" id="myBar"></div>
+           </div>
+        </header>
+        <section class="home" id="home">
+            <div class="home_img">
+                <img src="/images/home_img.png" alt="home_img">
+            </div>
+            <div class="home_content">
+             <h1>Hi, I am Petya!</h1>
+             <p>I am 22 years old from Elhovo. I am a 3rd year student at the Technical University - Sofia.</p>
+         </div>
+     
+        </section>
+        <section class="about" id="about"> 
+            <div class="head aboutHead"><h1>About</h1></div> 
+            <hr>
+            <div class="timeline">
+                <div class="container left">
+                  <div class="content">
+                    <h2>May 2019</h2>
+                    <p>I graduated with an excellent grade(5,87) from a mathematics class at St. Kliment Ohridski High School in Elhovo.</p>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <h2>June 2019</h2>
+                    <p>My first meeting with programming.</p>
+                    <p>I completed an with excellent grade(5.60) a course in SoftUni - Programming Basics with C#</p>
+                  </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>September 2019</h2>
+                        <p>Started my bachelor's degree at the Technical University - Sofia.</p>
+                        <p>Informatics and Software Sciences</p>
+                    </div>
+                  </div>
+              </div>  
+              <div class="container right">
+                <div class="content">
+                  <h2>September 2021</h2>
+                  <p>I finished with an excellent grade (6.00) HTML & CSS course in SoftUtni.</p> 
+                </div>
+              </div>
+          
+        </section>
+         <section class="skills" id="skills">
+             <h1 class="head skillsHead">Skills</h1>
+             <hr>
+             <div class="skills_content">
+                <div class="mySkills oop" id="oop">
+                    <h1>OOP with C#</h1>
+                    <br>
+                    <p>When I was first year at the university I have studied OOP. I created a C# project using OOP principals.  </p>
+                    <p>The project represents a Windows Deckstop App whose theme is a Meat Shop. </p>
+                    <p>It has some classes - Meat, Pork, Chicken, Beef. There are simple finctions - Add Meat, Sell Meat, Monthly report.  </p>
+                    <p>The project has a database with some tables and is uses some simple queries.</p>
+                    <p>The idea of this project is to show how I apply the most important principles of OOP - inheritance and polymorphism.</p>
+                    
+                    <div class="overlay">
+                        <div class="text">
+                            <p><i class="fab fa-github"></i> GitHub link for my OOP project: </p>
+                            <a href="https://github.com/PetiaKyuchukova/MeatShop.git">Open</a>
+                        </div>
+                    </div>
+  
+                </div>
+                <div class="mySkills java" id="java">
+                    <h1>Java</h1>
+                    <br>
+                    <p>During my second year at the university I have studied Java.  </p>
+                    <p>Together with colleagues created a projec about Selling Cinema tickets. </p>
+                    <p>In this project I worked on the database an the backend.</p>
+                    <div class="overlay">
+                        <div class="text">
+                            <p><i class="fab fa-github"></i> GitHub link for my Java project: </p>
+                            <a href="https://github.com/PetiaKyuchukova/JavaCinemaProject.git">Open</a>
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="mySkills database" id="database">
+                    <h1>Database</h1>
+                    <br>
+                    <p>I created my first database with Xampp. It was about restaurant system. I had to create relative database and make a queries about its attributes</p> 
+                    <br>
+                    <p>Here you are able to see my DB about Java project.</p>
+                    <p>I use pgAdmin for it.</p>
+                    
+                    br
+                    <p>I am currently working on a project for the university where I created the database using the Code first method.</p>
+                    <div class="overlay">
+                        <div class="text">
+                            <p><i class="fab fa-google-drive"></i> Click to show my first DB</p>
+                            <a href="https://drive.google.com/file/d/15w5BZLtsLIx-2XdMRNYv_KRcl8qiJJ9w/view?usp=sharing">Open</a>    
+                            <p><i class="fab fa-github"></i> GitHub link for my Java project DB: </p>
+                            <a href="https://github.com/PetiaKyuchukova/cinemaDB.git">Open</a>
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="mySkills software_architectures" id="sa">
+                    <h1>Software Architectures</h1>
+                    <br>
+                    <p>I have worked on building software architecture documentation for a project.</p>
+                    <p>The documentation contains Use Case diagrams and scenarios, Sequence diagrams, Class diagram and Component diagram.</p>
+                    <div class="overlay">
+                        <div class="text">
+                            <p><i class="fab fa-google-drive"></i> Here you can see my work: </p>
+                            <a href="https://drive.google.com/file/d/1UIadb3fuvX9md_PwaZeJX2c64YaR2wEd/view?usp=sharing">Open</a>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div class="mySkills html_css" id="html_css">
+                    <div class="html_css_content">
+                        <h1>HTML&CSS</h1>
+                    <br>
+                    <p>I completed a HTML&CSS course.The topics of the course were:  </p>
+                    <ul class="html_css_ul">
+                        <li>Introduction to HTML & CSS</li>
+                        <li>HTML Structure</li>
+                        <li>CSS & Typography</li>
+                        <li>CSS Box Model</li>
+                        <li>Position and Float</li>
+                        <li>Flexbox</li>
+                        <li>Media Queries</li>
+                    </ul>
+                    </div>
+                    <img src="/images/Certificate.jpeg" alt="">
+                    <div class="overlay">
+                        <div class="text">
+                            <p><i class="fab fa-github"></i> My HTML&CSS works: </p>
+                            <a href="https://github.com/PetiaKyuchukova/HTML-CSS.git">Open</a>
+                        </div>
+                    </div>
+                   
+        
+                </div>
+               
+             </div>  
+         </section>
+         <section class="contact" id="contact">
+           <h1>Contact me</h1>
+             <p><i class="fas fa-phone"></i><a href="tel:0877898196">0877898196</a></p>
+             <p><i class="fas fa-envelope"></i><a href="mailto: petia.kiuchukova@abv.bg">petia.kiuchukova@abv.bg</a></p>
+             <p><i class="fab fa-github"></i><a href="https://github.com/PetiaKyuchukova">https://github.com/PetiaKyuchukova</a></p>
+         </section>
+         <div class="thanks">
+            <p>
+                Thank you for your time!
+            </p>
+         </div>
+         <footer>
+             <p>Petya Kyuchukova</p>
+         </footer>
+
+    </div>
+   
+
+    <script>
+        var myVar;  
+        function Load() {
+          myVar = setTimeout(showPage, 3000);
+        }       
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("main").style.display = "block";
+        }
+
+        window.onscroll = function() {myFunction()};
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+
+        
+    </script>
+  
+
+</body>
+
+</html>
