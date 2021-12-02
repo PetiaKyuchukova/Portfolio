@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Portfolio</title>
 </head>
@@ -17,7 +17,7 @@
             <nav class="nav_container">
                 <p class="nav_logo">Petya</p>
                 <div class="nav_menu" id="nav_menu">
-                    <ul class="nav_list">
+                    <ul class="nav_list" id="nav_list">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <div class="dropdown">
@@ -37,6 +37,9 @@
                         <li><a class="cv" href="https://drive.google.com/file/d/1D70qh8B9LT77qRAIRWUUmcby2OO1E5CD/view?usp=sharing">CV-UK</a></li>
      
                     </ul>
+                    <a href="javascript:void(0);" class="icon" id="show" onclick="Show_hide()">
+                        <i class="fa fa-bars"  ></i>
+                    </a>
                 </div>
             </nav>
             <div class="progress-container">
@@ -60,20 +63,20 @@
                 <div class="container left">
                   <div class="content">
                     <h2>May 2019</h2>
-                    <p>I graduated with an excellent grade(5,87) from a mathematics class at St. Kliment Ohridski High School in Elhovo.</p>
+                    <p>Жraduated with an excellent grade(5,87) from a mathematics class at St. Kliment Ohridski High School in Elhovo.</p>
                   </div>
                 </div>
                 <div class="container right">
                   <div class="content">
                     <h2>June 2019</h2>
                     <p>My first meeting with programming.</p>
-                    <p>I completed an with excellent grade(5.60) a course in SoftUni - Programming Basics with C#</p>
+                    <p>Completed an with excellent grade(5.60) a course in SoftUni - Programming Basics with C#</p>
                   </div>
                 </div>
                 <div class="container left">
                     <div class="content">
                         <h2>September 2019</h2>
-                        <p>Started my bachelor's degree at the Technical University - Sofia.</p>
+                        <p>Started bachelor's degree at the Technical University - Sofia.</p>
                         <p>Informatics and Software Sciences</p>
                     </div>
                   </div>
@@ -81,7 +84,7 @@
               <div class="container right">
                 <div class="content">
                   <h2>September 2021</h2>
-                  <p>I finished with an excellent grade (6.00) HTML & CSS course in SoftUtni.</p> 
+                  <p>Finished with an excellent grade (6.00) HTML & CSS course in SoftUtni.</p> 
                 </div>
               </div>
           
@@ -93,11 +96,16 @@
                 <div class="mySkills oop" id="oop">
                     <h1>OOP with C#</h1>
                     <br>
-                    <p>When I was first year at the university I have studied OOP. I created a C# project using OOP principals.  </p>
-                    <p>The project represents a Windows Deckstop App whose theme is a Meat Shop. </p>
-                    <p>It has some classes - Meat, Pork, Chicken, Beef. There are simple finctions - Add Meat, Sell Meat, Monthly report.  </p>
-                    <p>The project has a database with some tables and is uses some simple queries.</p>
-                    <p>The idea of this project is to show how I apply the most important principles of OOP - inheritance and polymorphism.</p>
+                    
+                    <ul>
+                        <li>C# project</li>
+                        <li>Windows Deckstop App</li>
+                        <li>Theme:Meat Shop</li>
+                        <li>Classes - Meat, Pork, Chicken, Beef</li>
+                        <li>Simple finctions - Add Meat, Sell Meat, Monthly report</li>
+                        <li>Simple database</li>
+                        <li>inheritance and polymorphism</li>
+                    </ul>
                     
                     <div class="overlay">
                         <div class="text">
@@ -110,9 +118,11 @@
                 <div class="mySkills java" id="java">
                     <h1>Java</h1>
                     <br>
-                    <p>During my second year at the university I have studied Java.  </p>
-                    <p>Together with colleagues created a projec about Selling Cinema tickets. </p>
-                    <p>In this project I worked on the database an the backend.</p>
+                
+                    <ul>
+                        <li>project about Selling Cinema tickets</li>
+                        <li>In this project I worked on the database an the backend.</li>
+                    </ul>
                     <div class="overlay">
                         <div class="text">
                             <p><i class="fab fa-github"></i> GitHub link for my Java project: </p>
@@ -121,16 +131,36 @@
                     </div>
         
                 </div>
+                <div class="mySkills mvc" id="mvc">
+                    <h1>MVC Project</h1>
+                    <br>  
+                    <p>The documentation contains:</p>
+                    <ul>
+                        <li>Models</li>
+                        <li>Interfaces</li>
+                        <li>Controllers</li>
+                        <li>Services</li>
+                        <li>Migrations</li>
+                    </ul>
+                    
+                    <div class="overlay">
+                        <div class="text">
+                            <p><i class="fab fa-github"></i> GitHub link: </p>
+                            <a href="https://github.com/PetiaKyuchukova/RentACar_MVC_Project.git">Open</a>
+                        </div>
+                    </div>
+                  
+                </div>
                 <div class="mySkills database" id="database">
                     <h1>Database</h1>
                     <br>
-                    <p>I created my first database with Xampp. It was about restaurant system. I had to create relative database and make a queries about its attributes</p> 
-                    <br>
-                    <p>Here you are able to see my DB about Java project.</p>
-                    <p>I use pgAdmin for it.</p>
+                    <ul>
+                        <li>My first database with Xampp - restaurant system</li>
+                        <li>DB with pgAdmin about Java project</li>
+                        <li>Database using the Code first method</li>
+                    </ul>
                     
-                    br
-                    <p>I am currently working on a project for the university where I created the database using the Code first method.</p>
+                    
                     <div class="overlay">
                         <div class="text">
                             <p><i class="fab fa-google-drive"></i> Click to show my first DB</p>
@@ -144,8 +174,15 @@
                 <div class="mySkills software_architectures" id="sa">
                     <h1>Software Architectures</h1>
                     <br>
-                    <p>I have worked on building software architecture documentation for a project.</p>
-                    <p>The documentation contains Use Case diagrams and scenarios, Sequence diagrams, Class diagram and Component diagram.</p>
+                    <p>Software architecture documentation for a project.</p>
+                    <p>The documentation contains:</p>
+                    <ul>
+                        <li>Use Case diagrams and scenarios</li>
+                        <li>Sequence diagrams</li>
+                        <li>Class diagram</li>
+                        <li>Component diagram</li>
+                    </ul>
+                    
                     <div class="overlay">
                         <div class="text">
                             <p><i class="fab fa-google-drive"></i> Here you can see my work: </p>
@@ -203,7 +240,7 @@
     <script>
         var myVar;  
         function Load() {
-          myVar = setTimeout(showPage, 3000);
+          myVar = setTimeout(showPage, 300);
         }       
         function showPage() {
           document.getElementById("loader").style.display = "none";
@@ -217,6 +254,16 @@
           var scrolled = (winScroll / height) * 100;
           document.getElementById("myBar").style.width = scrolled + "%";
         }
+
+        
+        function Show_hide() {
+  var x = document.getElementById("nav_list");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 
         
     </script>

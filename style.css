@@ -6,6 +6,7 @@
 html{
     font-family: 'Montserrat', sans-serif;
 }
+
 section{
     margin: 0px 100px;
 }
@@ -84,19 +85,17 @@ section{
     -webkit-animation-duration: 1s;
     animation-name: animatebottom;
     animation-duration: 1s
-  }
+}
   
   @-webkit-keyframes animatebottom {
     from { bottom:-100px; opacity:0 } 
     to { bottom:0px; opacity:1 }
-  }
+}
   
   @keyframes animatebottom { 
     from{ bottom:-100px; opacity:0 } 
     to{ bottom:0; opacity:1 }
-  }
-  
-
+} 
 .header {
     position: fixed;
     top: 0;
@@ -114,7 +113,9 @@ section{
     background: pink;
     width: 0%;
 }
-
+#show{
+  display: none;
+}
 .nav_container{
     display: flex;
     justify-content: space-between;
@@ -123,7 +124,7 @@ section{
    
 }
 .nav_logo{
-    size: 25px;
+    font-size: 25px;
     font-weight: bold;
 }
 .nav_menu{
@@ -137,11 +138,12 @@ section{
 }
 .cv{
     background-color: rgb(219, 183, 189);
-   color: white;
+    color: white;
     margin-right: 5px;
     border-radius: 4px;
 }
 a{
+    font-size: 20px;
     text-decoration: none;
     padding: 20px 25px;
     color: black;
@@ -154,8 +156,8 @@ a{
     float: left;
     overflow: hidden;
 }
-  .dropdown .dropbtn {
-    font-size: 16px;
+.dropdown .dropbtn {
+    font-size: 20px;
     border: none;
     outline: none;
     
@@ -171,7 +173,7 @@ a{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
   .dropdown-content a {
     float: none;
     color: black;
@@ -191,11 +193,15 @@ a{
     height: 100vh;
 }
 .home_img img{
-    width: 300px;
+  width: 400px;
 }
 .home_content{
-    flex-basis: 45%;
-   vertical-align: center;
+  flex-basis: 45%;
+  vertical-align: center;
+
+}
+.home_content p{
+  font-size: 20px;
 }
 .about{
     padding-top: 15px;
@@ -203,8 +209,8 @@ a{
 }
 .timeline {
     position: relative;
-    max-width: 1200px;
     margin: 0 auto;
+    height: 100%;
 }
 .timeline::after {
     content: '';
@@ -215,8 +221,7 @@ a{
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-    height: 700px;
-    
+    height: 100%;
   }
   .container {
     padding: 10px 40px;
@@ -286,14 +291,13 @@ a{
       left: 31px;
     }
   
-  /* Full-width containers */
+  
     .container {
       width: 100%;
       padding-left: 70px;
       padding-right: 25px;
     }
   
-  /* Make sure that all arrows are pointing leftwards */
     .container::before {
       left: 60px;
       border: medium solid white;
@@ -301,12 +305,12 @@ a{
       border-color: transparent white transparent transparent;
     }
   
-  /* Make sure all circles are at the same spot */
+  
     .left::after, .right::after {
       left: 15px;
     }
   
-  /* Make all right containers behave like the left ones */
+  
     .right {
       left: 0%;
     }
@@ -317,6 +321,7 @@ a{
     padding-top: 15px;
     padding-bottom: 50px;
     margin-top: 10px;
+   
 }
 .head{
     font-weight: bold;
@@ -403,10 +408,11 @@ a{
     background-color: palevioletred;
     border-radius: 50%;
     position: relative;
-    left: -12%;
-    margin-top: -5%;
+    left: -100px;
+    margin-top: -25px;
     text-align: center;
     color: white;
+    
 }
 .contact i{
     margin-right: -20px;
@@ -414,6 +420,7 @@ a{
 }
 .contact a{
     color: white;
+    font-size: 18px;
 }
 .contact p {
     margin-bottom: 7px;
@@ -428,8 +435,8 @@ a{
     position: relative;
     border-radius: 50%;
     float: right;
-    margin-top: -30%;
-    left: -35%;
+    margin-top: -330px;
+    left: -600px;
     padding: 70px 0px;
     text-align: center;
     color: white;
@@ -438,7 +445,7 @@ a{
 footer{
     background-color: rgb(34, 99, 121);
     position: relative;
-    margin-top: -17%;
+    margin-top: -200px;
     height: 40vh;
     width: 100%;
     text-align: center;
