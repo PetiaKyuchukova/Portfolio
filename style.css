@@ -340,7 +340,7 @@ a{
 }
 .mySkills{
     background-color: white;
-    width: 45%;
+    width: 30%;
     height: 80vh;
     font-size: 15px;
     position: relative;
@@ -393,14 +393,9 @@ a{
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.html_css{
-    display: flex;
-    width: 93%;
-    justify-content: space-around;
-}
-.html_css_content{
-    max-width: 60%;
-}
+
+
+
 .contact{
     height: 400px;
     width: 400px;
